@@ -1,0 +1,297 @@
+/* Estilos para el header */
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eff2ee
+}
+
+/* Estilos para el logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    max-width: 40px;
+    margin-right: 10px;
+
+}
+
+/* Estilos navegacion */
+.navegacion {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.list-navegacion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .item-nav {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos sección Robot */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos Contenedor */
+.code {
+    text-align: center;
+}
+
+/* Estilos título */
+.code h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color; #333;
+    transition: color 0.3s; /*hover*/
+}
+
+/* Estilos Imagen */
+.code img {
+    max-width: 100%;
+}
+
+/* Efecto hover */
+.code h1:hover {
+    color: #007bff;
+}
+
+/* Info del instituto */
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px   ;
+}
+
+.botoninfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto-boton1,
+#texto-boton2,
+#texto-boton3,
+#texto-boton4 {
+    text-align: center;
+}
+
+/* Estilo de las imagenes */
+.botoninfo img {
+    max-width: 30%;
+    height: auto; 
+}
+
+/* Seccion Cursos */
+.container-cursos {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.cursos-izq {}
+    display: grid;
+
+    grid-template-columns: "img1 img1 img2 img3";
+    /*grid-template-areas: "img1 img1 img2 img2" "img1 img1 img2 img2" "img3 img4 img2 img2";
+    grid-template-columns: repeat(2, 1 fr); 
+    grid-template-rows: repeat(4, 1 fr);*/
+    gap: 20px;
+}
+
+/* Estilos de cada curso */
+.seccion-cursos {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos de las imagenes */
+.seccion-cursos img {
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Estilo de los títulos de cursos */
+.seccion-cursos h1[slot="header"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover de los títulos */
+.seccion-cursos:hover h1[slot="header"] {
+    opacity: 1;
+}
+
+/* Estilos de la presentación del equipo */
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Estilos de los perfiles del equipo */
+.perfil-cuadrado {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.perfil-cuadrado img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Estilos para textos y enlaces */
+@media screen and (max-width: 768px) {
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+/* Footer */ 
+.footer-config {
+    background-color: #00852f;
+}
+/* Estilos para el logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    max-width: 40px;
+    margin-right: 10px;
+
+}
+
+/* Estilos navegacion */
+.navegacion-footer {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.list-navegacion-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-nav-footer {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.link-nav-footer {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .item-nav {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Pagina Cursos */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* tarjetas de cursos */
+
+.card {
+    width: 18rem;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* media queries */
+@media screen and (max-width: 78px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+

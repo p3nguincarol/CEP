@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Instituto de idioma inglés para niños, adolescentes y adultos en Río Grande, Tierra del Fuego">
     <meta name="keywords" content="inglés, rio grande, tierra del fuego, argentina, clases de ingles, cambridge, first certificate">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/stlye.css">
     <title>CEP School of English</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body>
     <header class="cabecera">
         <!--LOGO-->
-        <!--<div class="header-logo">-->
-            <img src="img/NAVEGACION/Isotipo25.png" class="header-icon">
+        <div class="header-logo">
+            <img src="img/index/logos/Isotipo25.png" class="header-icon">
             <h1 class="header-text">CEP School of English</h1>
-        <!--</div>-->
+        </div>
             <!--menu navegacion-->
         <nav class="navegacion">
             <ul class="list-navegacion">
@@ -28,9 +32,177 @@
         </nav>
     </header>
     <main>
+        <!--introduccion de la web-->
         <section>
+            <div class="code">
+                <h1>Hello, ¿do you speak English?</h1>
+            <img src="img/index/o2-o2robot.gif"
+            alt="robot-speak-english"          
+            </div>  
+        </section>
+
+            <!--datos informativos de la institucion-->
+        <section>
+            <div class="botoninfo">
+                <img src="img/index/botones/boton1-02.webp" alt="info1">
+            </div>
+            <div id="texto-boton1">
+                <h4>Más de 25 años de trayectoria</h4>
+            </div>
+            <div class="botoninfo">
+                <img src="img/index/botones/boton2-02.webp" alt="info2">
+            </div>
+            <div id="texto-boton2">
+                <h4>Pioneros en la educacion del idioma inglés</h4>
+            </div>
+            <div class="botoninfo">
+                <img src="img/index/botones/boton3-02.webp" alt="info3">
+            </div>
+            <div id="texto-boton3">
+                <h4>Ubicados en pleno centro de la ciudad</h4>
+            </div>
+            <div class="botoninfo">
+                <img src="img/index/botones/boton4-02.webp" alt="info4">
+            </div>
+            <div id="texto-boton4">
+                <h4>Preparación de exámenes internacionales</h4>
+            </div>  
+        </section>                  
+        <section>
+            <!--presentación de cursos-->
+            <div class="container-cursos">
+                <div class="boton-seccion">
+                    <button class="titulo-seccion">Nuestros Cursos</button>
+                <div class="cursos">
+                <div class="cursos-izq">
+                    <div class="seccion-cursos">
+                        <img id="img1" src="img/index/fotos/img-cursos_kids.webp" alt="informacion cursos niños">
+                        <h1 slot="header">Cursos para niños</h1>
+                    </div>
+                    <div id="texto-primary">
+                        <a class="ver más" href="./pages/cursos.html">Ver Más</a> 
+                    </div>
+                    <div class="seccion-cursos">
+                        <img id="img2" src="img/index/fotos/adultos-square.webp" alt="informacion cursos adultos">
+                        <h1 slot="header">Cursos para adultos</h1>
+                    </div>
+                    <div id="texto-adultos">
+                        <a class="ver más" href="./pages/cursos.html">Ver Más</a> 
+                    </div>
+                    <div class="seccion-cursos">
+                        <img id="img3" src="img/index/fotos/tallers-square.webp" alt="informacion exámenes internacionales">
+                        <h1 slot="header">Exámenes Internacionales</h1>
+                    </div>
+                    <div id="texto-adultos">
+                        <a class="ver más" href="./pages/cursos.html">Ver Más</a> 
+                    </div>
+                <div class="cursos-der">
+                    <div class="seccion-cursos">
+                        <img id="img4" src="img/index/fotos/img-cursos-teens.webp" alt="informacion cursos adolescentes">
+                        <h1 slot="header">Cursos para adolescentes</h1>
+                    </div>
+                    <div id="texto-adolescentes">
+                        <a class="ver más" href="./pages/cursos.html">Ver Más</a> 
+                    </div>    
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+            <div class="boton-seccion">
+                <button class="titulo-seccion">El Dream Team</button>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/index/nosotros/Clau Us.jpg" class="card-img-top" alt="nosotros-directivos">
+                    <a href="./pages/directivos.html"
+                    <div class="card-body">
+                    <p class="card-text">Nuestros Directivos/p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/index/nosotros/Rei Us.jpg" class="card-img-top" alt="nosotros-directivos">
+                    <a href="./pages/colaboradores.html"
+                    <div class="card-body">
+                    <p class="card-text">Nuestros Colaboradores</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/index/nosotros/Natalia Us.jpg" class="card-img-top" alt="nosotros-directivos">
+                    <a href="./pages/docentes.html"
+                    <div class="card-body">
+                    <p class="card-text">Nuestro Equipo Docente</p>
+                    </div>
+                </div>
+
+            <!--presentación equipo-->
+        
+            <!--<div class="nosotros">
+                <h3 class="titulo-seccion">The Dream Team</h3>
+                    <div class="navnosotros">
+                        <ul>
+                            <li>
+                                <a href="pages/directivos.html">Directivos</a>                       
+                                <a href="pages/docentes.html">Docentes</a>
+                                <a href="pages/colaboradores.html">Colaboradores</a>
+                            </li>
+                        </ul>          
+                <div class="perfil-cuadrado">
+                    <img src="img/index/nosotros/Clau Us.jpg" alt="foto perfil director">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum neque voluptate natus quos minus reiciendis quod voluptatum at sint cumque quidem autem vitae quas rerum consequatur sunt, consectetur veritatis in.</p>
+                        <a class="ver más" href="./pages/nosotros.html">Ver Más</a> 
+                </div> 
+                <div class="perfil-cuadrado">
+                    <img src="img/index/nosotros/Rei Us.jpg" alt="foto perfil admin">
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum neque voluptate natus quos minus reiciendis quod voluptatum at sint cumque quidem autem vitae quas rerum consequatur sunt, consectetur veritatis in.</p>
+                        <a class="ver más" href="./pages/nosotros.html">Ver Más</a> 
+                </div> 
+                <div class="perfil-cuadrado">
+                    <img src="img/index/nosotros/Natalia Us.jpg" alt="foto perfil docente">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum neque voluptate natus quos minus reiciendis quod voluptatum at sint cumque quidem autem vitae quas rerum consequatur sunt, consectetur veritatis in.</p>
+                            <a class="ver más" href="./pages/nosotros.html">Ver Más</a>
+                    </div>-->
+                    
+        </section>
+
+        <section>
+            <!--Formulario Busqueda-->
+            <div class="contacto">
+                <div class="boton-seccion">
+                    <button class="titulo-seccion">Contacto</button>
+                <form action=""
+                    <div>
+                        <label for="">Buscar</label>
+                        <input type="text">
+                        <button>&#128269</button>
+                    </div>
+                </form>
+            </div>
+            <div class="ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.2129207212668!2d-67.70106931269305!3d-53.78890891791342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b165dce4c2e4f%3A0xd7801857c26bd94e!2sCep%20School%20Of%20English%20SRL!5e0!3m2!1ses-419!2sar!4v1693866806614!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
         </section>
     </main>    
+    <footer class="footer-config">
+        <!--pie de pagina-->
+        <div class="footer-logo">
+            <img src="img/index/logos/Iso-blanco-50.webp" class="footer-icon">
+        </div>
+            <!--menu navegacion-->
+        <nav class="navegacion-footer">
+            <ul class="list-navegacion-footer">
+                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/nosotros.html">Nosotros</a></li>
+                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/cursos.html">Cursos</a></li>
+                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/theteam.html">El Equipo</a></li>
+                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

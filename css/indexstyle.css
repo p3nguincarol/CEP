@@ -40,6 +40,7 @@
 .link-nav {
     text-decoration: none;
     color: #333;
+    font-size: 27px;
     font-weight: bold;
 }
 
@@ -89,7 +90,7 @@
 
 /* Efecto hover */
 .code h1:hover {
-    color: #007bff;
+    color: #00852f;
 }
 
 /* Info del instituto */
@@ -121,14 +122,14 @@ section {
 /* Seccion Cursos */
 .container-cursos {
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .boton-seccion {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -137,14 +138,24 @@ section {
 
 }
 
-.cursos-izq {}
+.cursos-izq {
     display: grid;
+    grid-template-areas: "img1 img1 img1 img1" "img2 img2 img3 img3";
+    column-gap: 7px;
+    row-gap: 5px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-    grid-template-columns: "img1 img1 img2 img3";
-    /*grid-template-areas: "img1 img1 img2 img2" "img1 img1 img2 img2" "img3 img4 img2 img2";
-    grid-template-columns: repeat(2, 1 fr); 
-    grid-template-rows: repeat(4, 1 fr);*/
-    gap: 20px;
+.cursos-der {
+    display: grid;
+    grid-template-areas: "img4 img4 img4 img4";
+    column-gap: 7px;
+    row-gap: 5px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Estilos de cada curso */
@@ -155,7 +166,7 @@ section {
 
 /* Estilos de las imagenes */
 .seccion-cursos img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -175,13 +186,23 @@ section {
     opacity: 1;
 }
 
+/* El Equipo */
+
+.boton-seccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: first baseline;
+}
 /* Estilos de la presentación del equipo */
 .nosotros {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 /* Estilos de los perfiles del equipo */
@@ -241,7 +262,7 @@ section {
 .link-nav-footer {
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -264,34 +285,9 @@ section {
 }
 
 /* Pagina Cursos */
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+
+
+/* Footer Cursos */
+.navbar bg-body-tertiary {
+    background-color: #00852f;
 }
-
-/* tarjetas de cursos */
-
-.card {
-    width: 18rem;
-    text-align: center;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* media queries */
-@media screen and (max-width: 78px) {
-    section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-}
-

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instituto de idioma inglés para niños, adolescentes y adultos en Río Grande, Tierra del Fuego">
+    <meta name="description" content="Cursos y talleres de idioma inglés para niños, adolescentes y adultos">
     <meta name="keywords" content="inglés, rio grande, tierra del fuego, argentina, clases de ingles, cambridge, first certificate">
     <title>CEP School of English</title>
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--ESTILOS-->
-    <link rel="stylesheet" href="css/stlye.css">
+    <link rel="stylesheet" href="../css/indexstyle.css">
     <link rel="shortcut icon" href="../img/favicon.ico">
 </head>.
 <body>
@@ -30,54 +30,62 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main min-height: 85vh>
         <section>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/index/fotos/kids-square.webp" class="card-img-top" alt="cursos-niños">
+            <h1 id="courses-title">Nuestros Cursos</h1>
+        </section>
+        <section d-flex justify-content-center-align-items-center-flex-column-flex-wrap-my-5>
+            <div class="card">
+                <img id="card-img-top-1" src="../img/index/fotos/kids-square.webp" alt="cursos-niños"><a href="../pages/kids.html"></a>
                     <div class="card-body">
-                    <p class="card-text">Acompañamos a tus hijos a dar sus primeros pasos en el idioma inglés</p>
+                    <p class="card-text">Cursos Para Niños: <br> Acompañamos a tus hijos a dar sus primeros pasos en el idioma inglés</p>
                     </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/index/fotos/Teens-05.webp" class="card-img-top" alt="cursos-adolescentes">
+            <div class="card">
+                <img src="../img/index/fotos/teens-square.webp" class="card-img-top" alt="cursos-adolescentes"><a href="../pages/teens.html"></a>
                     <div class="card-body">
-                    <p class="card-text">Cursos y niveles para todas las edades</p>
+                    <p class="card-text">Cursos Para Adolescentes: <br> Todos los niveles para todas las edades</p>
                     </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/index/fotos/examenes-square.webp" class="card-img-top" alt="examenes-internacionales">
+            <div class="card">
+                <img src="../img/index/fotos/examenes-square.webp" class="card-img-top" alt="examenes-internacionales"><a href="../pages/talleres.html"></a>
                     <div class="card-body">
-                    <p class="card-text">Gran trayectoria en la preparación para rendir exámenes internacionales como First Certificate y TOEFL</p>
+                    <p class="card-text">Exámenes Internacionales: <br> Gran trayectoria en la preparación para rendir exámenes internacionales como First Certificate y TOEFL</p>
+                    </div>
+            </div>
+        </section>
+        <section d-flex justify-content-center-align-items-center-flex-column-flex-wrap-my-5>
+            <div class="card">
+                <img src="../img/index/fotos/tallers-square.webp" alt="talleres-para-adultos"><a href="../pages/talleres.html"></a>
+                    <div class="card-body">
+                    <p class="card-text">Talleres: <br> Cursos de conversación para que sigas practicando el idioma</p>
+                    </div>
+            </div>
+            <div class="card">
+                <img src="../img/index/fotos/incompany-square-12.webp" class="card-img-top" alt="cursos-incompany"><a href="../pages/talleres.html"></a>
+                    <div class="card-body">
+                    <p class="card-text">In Company: <br> cursos pensados para personal corporativo</p>
                     </div>
             </div>
         </section>
     </main>       
     
-    <footer>
-        <!--pie de pagina-->
-        <div class="footer-logo">
-            <img src="../img/index/logos/Iso-blanco-50.webp" class="footer-icon"> <a href="../index.html"></a>
-        </div>
-            <!--menu navegacion-->
-        <nav class="navegacion-footer">
-            <ul class="list-navegacion-footer">
-                <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/cursos.html">Cursos</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/theteam.html">El Equipo</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
     <footer class="footer-config">
         <!--pie de pagina-->
-        <div class="footer-logo">
-            <img src="../img/index/logos/Iso-blanco-50.webp" class="footer-icon">
-            <img src="../img/index/social/logo_fb.webp" class="footer-icon">
-            <img src="../img/index/social/logo-ig.webp" class="footer-icon">
-            <img src="../img/index/social/logo-lk.webp" class="footer-icon">
-            <img src="../img/index/social/logo-wt.webp" class="footer-icon">
-        </div>
+        <section>
+            <div class="footer-logo">
+                <nav class="navigation-footer">
+                    <img src="../img/index/logos/iso-negro_Mesa de trabajo 3.webp" class="footer-icon"><a class="link-nav-footer" href="../index.html"></a>
+                    <img src="../img/index/social/logo_fb.webp" class="footer-icon">
+                    <img src="../img/index/social/logo-ig.webp" class="footer-icon">
+                    <img src="../img/index/social/logo-lk.webp" class="footer-icon">
+                    <img src="../img/index/social/logo-wt.webp" class="footer-icon">
+                </nav>
+            </div>
+    </section>
             <!--menu navegacion-->
-        <nav class="navegacion-footer">
+        <nav class="navigation-footer">
             <ul class="list-navegacion-footer">
                 <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/nosotros.html">Nosotros</a></li>
                 <li class="item-nav-footer"><a class="link-nav-footer" href="../pages/cursos.html">Cursos</a></li>

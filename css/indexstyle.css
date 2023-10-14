@@ -62,42 +62,30 @@
     }
 }
 
-/* Estilos sección Robot */
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Estilos Contenedor */
-.code {
-    text-align: center;
-}
+/* Estilos sección video */
 
 /* Estilos título */
-.code h1 {
-    font-size: 44px;
+.welcome-banner {
+    display: flex;
+    justify-content: center;
+    font-size: 37px;
     font-weight: bold;
     color; #333;
-    transition: color 0.3s; /*hover*/
+    color: var(#00852f);
+    transition: color 0.2s; /*hover*/
 }
 
-/* Estilos Imagen */
-.code img {
-    max-width: 100%;
-}
-
-/* Efecto hover */
-.code h1:hover {
-    color: #00852f;
+.welcome-robot {
+    display: flex;
+    justify-content: center;
+    size-adjust: 50%;
 }
 
 /* Info del instituto */
 section {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 25px   ;
+    gap: 2px;
 }
 
 .botoninfo {
@@ -106,115 +94,138 @@ section {
     align-items: center;
 }
 
-#texto-boton1,
-#texto-boton2,
-#texto-boton3,
-#texto-boton4 {
-    text-align: center;
+/* Estilo de las imagenes */
+img {
+    max-width: 45%;
+    height: auto;  
 }
 
-/* Estilo de las imagenes */
-.botoninfo img {
-    max-width: 30%;
-    height: auto; 
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold ;
+    padding-left: 20px;
 }
 
 /* Seccion Cursos */
-.container-cursos {
+/*.container-cursos {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+}*/
+
+.kids-section {
+    display: flex;
+    justify-content: left;
 }
 
-.boton-seccion {
+#img1 {
+    max-width: 200%;
+    height: fit-content;
+}
+
+#section-button1 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
+    align-items: center;
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-
 }
 
+/*segunda fila izq*/
 .cursos-izq {
-    display: grid;
-    grid-template-areas: "img1 img1 img1 img1" "img2 img2 img3 img3";
-    column-gap: 7px;
+    display: flex;
+    flex-direction: row;
     row-gap: 5px;
     justify-items: stretch;
-    align-items: center;
     justify-content: space-evenly;
 }
 
+#img2 {
+    max-width: 45%; 
+}
+
+#img3 {
+    max-width: 45%;
+}
+ /* fila derecha cursos */
 .cursos-der {
-    display: grid;
-    grid-template-areas: "img4 img4 img4 img4";
-    column-gap: 7px;
-    row-gap: 5px;
-    justify-items: stretch;
-    align-items: center;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: right;
+}
+
+#img4 {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-self: flex-end;
+    max-width: 50%;
 }
 
 /* Estilos de cada curso */
-.seccion-cursos {
+/*.seccion-cursos {
     position: relative;
     overflow: hidden;
-}
+}*/
 
 /* Estilos de las imagenes */
-.seccion-cursos img {
+/*.seccion-cursos img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
-}
+}*/
 
 /*Estilo de los títulos de cursos */
-.seccion-cursos h1[slot="header"] {
+/*.seccion-cursos h1[slot="header"] {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-}
-
-/* Hover de los títulos */
-.seccion-cursos:hover h1[slot="header"] {
-    opacity: 1;
-}
+}*/
 
 /* El Equipo */
 
-.boton-seccion {
+.the-team {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     align-content: first baseline;
 }
 /* Estilos de la presentación del equipo */
-.nosotros {
+/*.nosotros {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-}
+}*/
 
 /* Estilos de los perfiles del equipo */
-.perfil-cuadrado {
+/*.card-theteam {
+    display: flex;
+    flex-direction: row;
     width: 350px;
     height: 350px;
     overflow: hidden;
     border-radius: 50%;
+}*/
+
+.idcards {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    height: auto;
+
 }
 
-.perfil-cuadrado img {
-    max-width: 70%;
+.btn btn-success {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
     height: auto;
 }
 
@@ -243,7 +254,7 @@ section {
 }
 
 /* Estilos navegacion */
-.navegacion-footer {
+.navigation-footer {
     flex-grow: 1;
     text-align: right;
 }
@@ -285,6 +296,30 @@ section {
 }
 
 /* Pagina Cursos */
+
+#courses-title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    width: 25rem;
+}
+
+.card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 
 /* Footer Cursos */

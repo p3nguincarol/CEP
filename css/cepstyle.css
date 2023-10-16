@@ -1,0 +1,122 @@
+/* HEADER */
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #eff2ee
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;   
+}
+
+.header-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    padding-left: 500px;
+}
+
+.navegacion {
+    display: flex;
+    
+}
+
+.list-navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 70px;
+}
+
+.item-nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.link-nav {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #00852f;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* MAIN */
+/* Introducción de la web */
+
+.welcome-banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.welcome-robot {
+    display: flex;
+    justify-content: center;
+}
+
+/* Info del Instituto */
+
+.inicio-info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /*grid-template-columns: repeat(4, 1fr); */
+    /*gap: 1px;*/
+}
+
+/*.inicio-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 3rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}*/
+
+.info-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 65%;
+}
+
+.infobutton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:#00852f;
+}
+
+.the-teambutton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    display: flex;
+    align-items: center;
+
+
+}
+.the-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.us-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center; 
+}

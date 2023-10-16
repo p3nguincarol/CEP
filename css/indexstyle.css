@@ -62,7 +62,7 @@
     }
 }
 
-/* Estilos sección video */
+/* MAIN */
 
 /* Estilos título */
 .welcome-banner {
@@ -70,7 +70,7 @@
     justify-content: center;
     font-size: 37px;
     font-weight: bold;
-    color; #333;
+    color: #333;
     color: var(#00852f);
     transition: color 0.2s; /*hover*/
 }
@@ -81,12 +81,19 @@
     size-adjust: 50%;
 }
 
+.inicio-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
 /* Info del instituto */
-section {
+/*section {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 2px;
-}
+}*/
 
 .botoninfo {
     display: flex;

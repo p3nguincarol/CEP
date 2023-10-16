@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--ESTILOS-->
-    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/cepstyle.css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
@@ -18,7 +18,7 @@
     <header class="cabecera">
         <!--LOGO-->
         <div class="header-logo">
-            <img src="img/index/logos/Isotipo25.png" class="header-icon">
+            <img src="img/index/logos/Isotipo25.png">
             <h1 class="header-text">CEP School of English</h1>
         </div>
             <!--menu navegacion-->
@@ -33,28 +33,29 @@
     </header>
     <main>
         <!--introduccion de la web-->
-        <h1 class="welcome-banner">Hello! Do you speak English?</h1>
+        <h1 class="welcome-banner">Hello! <br> Do you speak English?</h1>
         <section>
             <img class="welcome-robot" src="img/index/o2-o2robot.gif"
             alt="robot-speak-english">
         </section>
 
             <!--Info del instituto-->
-        <section>
+
+        <section class="inicio-info">
             <div>
-                <img src="img/index/botones/boton1-02.webp" alt="info-institucional-1">
+                <img class="info-img" src="img/index/botones/boton1-02.webp" alt="info-institucional-1">
                 <h4 class="infobutton">Más de 25 años <br> de trayectoria</h4>                
             </div>
             <div>
-                <img src="img/index/botones/boton2-02.webp" alt="info-institucional-2">
+                <img class="info-img" src="img/index/botones/boton2-02.webp" alt="info-institucional-2">
                 <h4 class="infobutton">Pioneros en la <br> educación del idioma <br> inglés en Río Grande</h4>
             </div>
             <div>
-                <img src="img/index/botones/boton3-02.webp" alt="info-institucional-3">
+                <img class="info-img" src="img/index/botones/boton3-02.webp" alt="info-institucional-3">
                 <h4 class="infobutton">Ubicados en pleno <br> centro de la ciudad</h4>
-            </div>
             <div>
-                <img src="img/index/botones/boton4-02.webp" alt="info-institucional-4">
+            <div>
+                <img class="info-img" src="img/index/botones/boton4-02.webp" alt="info-institucional-4">
                 <h4 class="infobutton">Cursos de preparación <br> para exámenes <br> internacionales</h4>
             </div>
         </section>
@@ -63,7 +64,6 @@
         <section>
             <!--presentación de cursos-->
             <button class="d-flex justify-content-center">Nuestros Cursos</button>
-
         </section>
 
         <section>
@@ -98,16 +98,15 @@
 
         <!-- El Equipo-->
         <section>
-            <button class="the-team">El Dream Team</button>
+            <button class="the-teambutton">El Dream Team</button>
         </section>
-        <section>
+        <section  class="the-team">
             <div>
                 <img class="idcards" src="img/index/nosotros/clau-us.webp" alt="nosotros-directivos"><a href="./pages/directivos.html"></a> 
             </div> 
             <div>
                 <button type="us-button" class="btn btn-success">Nuestros Directivos</button><a href="./pages/directivos.html"></a>
-            </div>              
-            
+            </div>         
             <div>
                 <img class="idcards" src="img/index/nosotros/Rei-us-11.webp" alt="nosotros-colaboradores">
             </div>               
@@ -144,21 +143,23 @@
     </main>    
     <footer class="footer-config">
         <!--pie de pagina-->
-        <div class="footer-logo">
-            <img src="img/index/logos/Iso-blanco-50.webp" class="footer-icon">
-            <img src="img/index/social/logo_fb.webp" class="footer-icon">
-            <img src="img/index/social/logo-ig.webp" class="footer-icon">
-            <img src="img/index/social/logo-lk.webp" class="footer-icon">
-            <img src="img/index/social/logo-wt.webp" class="footer-icon">
-        </div>
-            <!--menu navegacion-->
         <nav class="navegacion-footer">
-            <ul class="list-navegacion-footer">
-                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/nosotros.html">Nosotros</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/cursos.html">Cursos</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/theteam.html">El Equipo</a></li>
-                <li class="item-nav-footer"><a class="link-nav-footer" href="pages/contacto.html">Contacto</a></li>
-            </ul>
+            <div class="footer-logo">
+                <img src="img/index/logos/Iso-blanco-50.webp" class="footer-icon">
+                <img src="img/index/social/logo_fb.webp" class="footer-icon">
+                <img src="img/index/social/logo-ig.webp" class="footer-icon">
+                <img src="img/index/social/logo-lk.webp" class="footer-icon">
+                <img src="img/index/social/logo-wt.webp" class="footer-icon">
+            </div>
+                <!--menu navegacion-->
+            <div>
+                <ul class="list-navegacion-footer">
+                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/nosotros.html">Nosotros</a></li>
+                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/cursos.html">Cursos</a></li>
+                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/theteam.html">El Equipo</a></li>
+                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </footer>
 </body>

@@ -57,10 +57,16 @@
     color: darkgreen;
 }
 
-.welcome-robot {
+.english-robot {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
+
+/*.welcome-robot {
+    display: flex;
+    justify-content: center;
+}*/
 
 /* Info del Instituto */
 
@@ -72,7 +78,7 @@
     /*gap: 1px;*/
 }
 
-/*.inicio-info {
+.inicio-info {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -80,12 +86,12 @@
     padding-left: 3rem !important;
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
-}*/
+}
 
 .info-img {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
     width: 65%;
 }
 

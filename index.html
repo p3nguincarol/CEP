@@ -61,48 +61,60 @@
         </section>
         
         <!--Seccion Cursos-->
+        
         <section>
             <!--presentación de cursos-->
-            <button class="d-flex justify-content-center">Nuestros Cursos</button>
+            <!--boton cursos-->
+            <div class="classes-container">   
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Nuestros Cursos</button>
+                </div>
+            </div>
+        </section>       
+        <!--Presentación Cursos-->
         </section>
-
-        <section>
-            <div class="cursos-izq">
-            <!--primera fila izq-->
-            <div class="kids-section">
-                <img id="img1" src="img/index/fotos/img-cursos_kids.webp" alt="informacion cursos niños">
+            <div class="pic-container">
+                <a class="pic-text" href="./pages/kids.html">
+                    <img class="courses-pics" src="img/index/fotos/kids-apaisado-01.webp" alt="cursos-kids">
+                    <h4 class="pic-description">Niños</h4>
+                </a>            
             </div>
-            <div>
-                <button class="section-button1"><a class="ver más" href="./pages/cursos.html">Cursos Para Niños</a></button>
+            <div class="pic-container">
+                <a class="pic-text" href="./pages/teens.html">
+                    <img class="courses-pics" src="img/index/fotos/teens-apaisado-01.webp" alt="cursos-adolescentes">
+                    <h4>Adolescentes</h4>
+                </a>
             </div>
-
-            <!-- segunda fila izq -->        
-        </section>
-
-        <section class="cursos-izq">
-            <div>
-                <img id="img2" src="img/index/fotos/adultos150.webp" alt="informacion cursos adultos">
-                    <button class="section-button"><a class="ver más" href="./pages/cursos.html">Cursos para adultos</a></button> 
+            <div class="pic-container">
+                <a class="pic-text" href="./pages/adults.html">
+                    <img class="courses-pics" src="img/index/fotos/adults-apaisado-01.webp" alt="cursos-adultos">
+                    <h4>Adultos</h4>
+                </a>
             </div>
-            <div>
-                <img id="img3" src="img/index/fotos/talleres150.webp" alt="informacion exámenes internacionales">
-                <button><a class="section-button" href="./pages/cursos.html">Exámenes Internacionales</a></button> 
+            <div class="pic-container">
+                <a class="pic-text" href="./pages/talleres.html">
+                    <img class="courses-pics" src="img/index/fotos/internacional-apaisado-01.webp" alt="examenes-internacionales">
+                    <h4>Exámenes Internacionales</h4>
+                </a>
             </div>
-            <div>
-                <img id="img4" src="img/index/fotos/img-cursos-teens.webp" alt="informacion cursos adolescentes">
+            <div class="pic-container">
+                <a class="pic-text" href="./pages/talleres.html">
+                    <img class="courses-pics" src="img/index/fotos/incompany-apaisado-01.webp" alt="cursos-iincompany">
+                    <h4>In Company</h4>
+                </a>
             </div>
-            <button id="texto-adolescentes">
-                <a class="ver más" href="./pages/cursos.html">Ver Más</a> 
-            </button> 
         </section>
 
         <!-- El Equipo-->
         <section>
-            <button class="the-teambutton">El Dream Team</button>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">El Dream Team</button>
+            </div>
         </section>
         <section  class="the-team">
             <div>
-                <img class="idcards" src="img/index/nosotros/clau-us.webp" alt="nosotros-directivos"><a href="./pages/directivos.html"></a> 
+                <a href="./pages/directivos.html"></a> 
+                <img class="idcards" src="img/index/nosotros/clau-us.webp" alt="nosotros-directivos">
             </div> 
             <div>
                 <button type="us-button" class="btn btn-success">Nuestros Directivos</button><a href="./pages/directivos.html"></a>
@@ -125,7 +137,7 @@
             <!--Formulario Busqueda-->
             <div class="contacto">
                 <div class="boton-seccion">
-                    <button class="titulo-seccion">Contacto</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Contacto</button>
                 </div>
                     <div class="ubicacion">
                         <form action="">
@@ -140,27 +152,61 @@
             </div>
 
         </section>
-    </main>    
-    <footer class="footer-config">
-        <!--pie de pagina-->
-        <nav class="navegacion-footer">
-            <div class="footer-logo">
-                <img src="img/index/logos/Iso-blanco-50.webp" class="footer-icon">
-                <img src="img/index/social/logo_fb.webp" class="footer-icon">
-                <img src="img/index/social/logo-ig.webp" class="footer-icon">
-                <img src="img/index/social/logo-lk.webp" class="footer-icon">
-                <img src="img/index/social/logo-wt.webp" class="footer-icon">
-            </div>
-                <!--menu navegacion-->
-            <div>
-                <ul class="list-navegacion-footer">
-                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/nosotros.html">Nosotros</a></li>
-                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/cursos.html">Cursos</a></li>
-                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/theteam.html">El Equipo</a></li>
-                    <li class="item-nav-footer"><a class="link-nav-footer" href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+    </main>  
+    
+    <!-- Footer -->
+
+    <footer style="background-color: #00852f;">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h5 class="mb-3 text-dark">CEP School of English</h5>
+            <p>
+                Instituto educativo de idioma inglés para niños, adolescentes y adultos ubicado en pleno centro de la ciudad de Río Grande, Tierra del Fuego.
+            </p>
+        <div> <img src="./img/index/logos/iso-negro_Mesa de trabajo 3.webp"> </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-3 text-dark">Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1 text-dark">
+                <a href="./pages/nosotros.html" style="color: #11431e;">Nosotros</a>
+              </li>
+              <li class="mb-1">
+                <a href="./pages/cursos.html" style="color: #11431e;">Cursos</a>
+              </li>
+              <li class="mb-1">
+                <a href="./pages/theteam.html" style="color: #11431e;">El Equipo</a>
+              </li>
+              <li>
+                <a href="./pages/contacto.html" style="color: #11431e;">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-1 text-dark">Horarios de Atención</h5>
+            <table class="table" style="border-color: #8a7d7d;">
+              <tbody>
+                <tr>
+                  <td>Mar - Vie:</td>
+                  <td>10am - 12pm</td>
+                </tr>
+                <tr>
+                  <td>Lun - Vie:</td>
+                  <td>4pm - 9pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright: @PenguinCarol
+      </div>
+      <!-- Copyright -->
     </footer>
+
+  <!-- End of .container -->
+
 </body>
 </html>

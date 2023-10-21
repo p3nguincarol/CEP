@@ -48,112 +48,140 @@
 /* Introducción de la web */
 
 .welcome-banner {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: bold;
     color: darkgreen;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
+    display: block;
+    margin: 0 auto;
+    padding: 25px;
+
 }
 
 .cep-video {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     padding-left: 120px;
-    padding-top: 20px;
+    padding-top: 20px;*/
+    display: block;
+    margin: 0 auto;
 }
 
 /* Info del Instituto */
 
 .inicio-info {
-    display: grid;
+    /*display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    /*grid-template-columns: repeat(4, 1fr); */
-    /*gap: 1px;*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;*/
+    display: flex;
+    justify-content: center;
 }
 
 .inicio-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding-left: 3rem !important;
+    padding: 0 280px 0 280px;
+    /*padding-left: 3rem !important;
     padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-bottom: 3rem !important;*/
+}
+
+.inicio-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 290px;
+    margin: 20px;
 }
 
 .info-img {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 65%;
+    justify-content: center;*/
+    width: 200px;
 }
 
 .infobutton {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     color:#00852f;
+    text-align: center;
 }
 
 /* Seccion Cursos */
 
 .pic-container {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    display: block; 
+    box-sizing: border-box; 
 }
 
 .pic-text {
     text-decoration: none;
     text-align: center;
     font-size: medium;
-    margin-top: 25px;
 }
 
-.courses-pic {
+.courses-pics {
     overflow-clip-margin: content-box;
     overflow: clip;
     border-radius: 5%;
     border-color: #00852f;
+    margin: 20px;
 }
 
 .pic-description {
     text-decoration: none;
     text-align: center;
     font-size: medium;
-    margin-top: 25px;
     text-shadow: black;
     text-emphasis-color: #00852f;
 }
 
 /*El Equipo*/
 
-.the-teambutton {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color:black;
-    display: flex;
-    align-items: center;
-
-
+.team-container {
+    margin-top: 40px;
 }
+
 .the-team {
     display: flex;
     flex-direction: row;
+    /*flex-wrap: nowrap;*/
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 100px;
+    padding: 20px 280px 0 280px;
 }
 
-.us-button {
+.team-config {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 290px;
+    margin: 20px;
+}
+
+/* CONTACTO */
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
 }

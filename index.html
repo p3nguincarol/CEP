@@ -21,15 +21,42 @@
 </head>
 
 <body>
+    <!--header class="header">
+        <nav class="navbar navbar-expand-lg custom-header-cep">
+            <div class="container-fluid">
+                <img class="logo" src="img/index/logos/Isotipo25.png" alt="logo">
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/theteam.html">El Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav-->
+    </header>
     <header class="cabecera">
         <!--LOGO-->
         <div class="header-logo">
-            <img src="img/index/logos/Isotipo25.png"><a href="index.html"></a>
+            <img src="img/index/logos/Isotipo25.png">
             <h1 class="header-text">CEP School of English</h1>
         </div>
         <!--menu navegacion-->
         <nav class="navegacion">
             <ul class="list-navegacion">
+                <li class="item-nav"><a class="link-nav" href="index.html">Inicio</a></li>
                 <li class="item-nav"><a class="link-nav" href="pages/nosotros.html">Nosotros</a></li>
                 <li class="item-nav"><a class="link-nav" href="pages/cursos.html">Cursos</a></li>
                 <li class="item-nav"><a class="link-nav" href="pages/theteam.html">El Equipo</a></li>
@@ -72,37 +99,35 @@
             </div>
         </div>
         <!--Presentación Cursos-->
-        <div class="pic-container">
-            <a class="pic-text" href="./pages/kids.html">
-                <img class="courses-pics" src="img/index/fotos/kids-apaisado-01.webp" alt="cursos-kids">
-                <h4 class="pic-description">Niños</h4>
-            </a>
-        </div>
-        <div class="pic-container">
-            <a class="pic-text" href="./pages/teens.html">
-                <img class="courses-pics" src="img/index/fotos/teens-apaisado-01.webp" alt="cursos-adolescentes">
-                <h4 class="pic-description">Adolescentes</h4>
-            </a>
-        </div>
-        <div class="pic-container">
-            <a class="pic-text" href="./pages/adults.html">
-                <img class="courses-pics" src="img/index/fotos/adults-apaisado-01.webp" alt="cursos-adultos">
-                <h4 class="pic-description">Adultos</h4>
-            </a>
-        </div>
-        <div class="pic-container">
-            <a class="pic-text" href="./pages/talleres.html">
-                <img class="courses-pics" src="img/index/fotos/internacional-apaisado-01.webp"
-                    alt="examenes-internacionales">
-                <h4 class="pic-description">Exámenes Internacionales</h4>
-            </a>
-        </div>
-        <div class="pic-container">
-            <a class="pic-text" href="./pages/talleres.html">
-                <img class="courses-pics" src="img/index/fotos/incompany-apaisado-01.webp" alt="cursos-iincompany">
-                <h4 class="pic-description">In Company</h4>
-            </a>
-        </div>
+        <section>
+            <div class="courses">
+                <div class="kids">
+                    <a class="pic-text" href="./pages/kids.html">
+                        <img class="courses-pics" src="img/index/fotos/kids-grid-double-06.webp" alt="cursos-kids">
+                        <h4 class="pic-description">Niños</h4>
+                </div>
+                <div class="teens">
+                    <a class="pic-text" href="./pages/teens.html">
+                        <img class="courses-pics" src="img/index/fotos/teens-grids-hor-06.webp"
+                            alt="cursos-adolescentes">
+                        <h4 class="pic-description">Adolescentes</h4>
+                    </a>
+                </div>
+                <div class="adults">
+                    <a class="pic-text" href="./pages/adults.html">
+                        <img class="courses-pics" src="img/index/fotos/adults-grid-vert-07.webp" alt="cursos-adultos">
+                        <h4 class="pic-description">Adultos</h4>
+                    </a>
+                </div>
+                <div class="exams">
+                    <a class="pic-text" href="./pages/talleres.html">
+                        <img class="courses-pics" src="img/index/fotos/talleres-grid-vert-07.webp"
+                            alt="examenes-internacionales">
+                        <h4 class="pic-description">Exámenes Internacionales</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
         <!-- El Equipo-->
         <section class="team-container">
             <div class="d-grid gap-2 col-6 mx-auto">
@@ -149,10 +174,12 @@
                 <div class="col-lg-6 col-md-12 mb-4">
                     <h5 class="mb-3 text-dark">CEP School of English</h5>
                     <p>
-                        Instituto educativo de idioma inglés para niños, adolescentes y adultos ubicado en pleno centro
+                        Instituto educativo de idioma inglés para niños, adolescentes y
+                        adultos ubicado en pleno centro
                         de la ciudad de Río Grande, Tierra del Fuego.
                     </p>
-                    <div> <img src="./img/index/logos/iso-negro_Mesa de trabajo 3.webp"> </div>
+                    <div> <img src="./img/index/logos/iso-negro_Mesa de trabajo 3.webp">
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="mb-3 text-dark">Links</h5>
@@ -164,7 +191,8 @@
                             <a href="./pages/cursos.html" style="color: #11431e;">Cursos</a>
                         </li>
                         <li class="mb-1">
-                            <a href="./pages/theteam.html" style="color: #11431e;">El Equipo</a>
+                            <a href="./pages/theteam.html" style="color: #11431e;">El
+                                Equipo</a>
                         </li>
                         <li>
                             <a href="./pages/contacto.html" style="color: #11431e;">Contacto</a>

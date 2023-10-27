@@ -110,6 +110,20 @@
 
 /* Seccion Cursos */
 
+.courses-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 100px;
+}
+
+.figure-caption text-start {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .btn-primary {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -117,27 +131,6 @@
     border-radius: 5px;
     margin-bottom: 20px;
 }
-
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "Kids Kids Teens"
-    "Adultos Adultos Teens"
-    "Talleres In-Company Teens";
-}
-
-.Kids { grid-area: Kids; }
-
-.Teens { grid-area: Teens; }
-
-.Adultos { grid-area: Adultos; }
-
-.Talleres { grid-area: Talleres; }
-
-.In-Company { grid-area: In-Company; }
 
 .pic-text {
     text-decoration: none;

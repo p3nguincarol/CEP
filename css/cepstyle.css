@@ -164,32 +164,6 @@
     margin-top: 40px;
 }
 
-/*.the-team {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 20px 280px 0 280px;
-}*/
-
-/*.team-config {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 290px;
-    margin: 20px;
-}*/
-
-/*.btn-success {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: bold;
-}*/
-
 /* CONTACTO */
 .contacto {
     display: flex;
@@ -201,7 +175,7 @@
 .name-text {
     margin-top: 30px;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .us-section {
     display: flex;

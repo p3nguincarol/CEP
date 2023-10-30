@@ -1,322 +1,340 @@
-/* HEADER */
-
-/*.cabecera {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #eff2ee
-}
-
-.custom-header-cep {
-    background-color: #00852f;
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-}
-
-.header-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 34px;
-    padding-left: 500px;
-}
-
-.navegacion {
-    display: flex;
-
-}
-
-.list-navegacion {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-left: 50px;
-}
-
-.item-nav {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.link-nav {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: #00852f;
-    font-size: 20px;
-    font-weight: bold;
-}*/
-
 /* MAIN */
 /* Introducción de la web */
 
 .welcome-banner {
-    /*display: flex;
+  /*display: flex;
     justify-content: center;*/
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: darkgreen;
-    /*padding-top: 15px;*/
-    display: block;
-    margin: 0 auto;
-    padding: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkgreen;
+  /*padding-top: 15px;*/
+  display: block;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 .cep-video {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Info del Instituto */
 
 .inicio-info {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .inicio-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 0 280px 0 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 280px 0 280px;
 }
 
 .inicio-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 290px;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 290px;
+  margin: 20px;
 }
 
 .info-img {
-    width: 200px;
+  width: 200px;
 }
 
 .infobutton {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: #00852f;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #00852f;
+  text-align: center;
 }
 
 /* Seccion Cursos */
 
 .courses-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 100px;
 }
 
 .courses-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 70px;
 }
 
 .btn-primary {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    background-color: #00852f;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color: #00852f;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .pic-text {
-    text-decoration: none;
-    text-align: center;
-    font-size: medium;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
 }
 
 .courses-pics {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    border-radius: 5%;
-    border-color: #00852f;
-    margin: 20px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 5%;
+  border-color: #00852f;
+  margin: 20px;
 }
 
 .pic-description {
-    text-decoration: none;
-    text-align: center;
-    font-size: medium;
-    text-shadow: black;
-    text-emphasis-color: #00852f;
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  text-shadow: black;
+  text-emphasis-color: #00852f;
 }
 
 /*El Equipo*/
 
 .team-container {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
-/* CONTACTO */
+/* Sección Contacto */
 .contacto {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
 }
 
-/* NOSOTROS */
+/* Página NOSOTROS */
+
+/* Texto Presentación */
 .name-text {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
+/* Presentación */
 .us-section {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .us-description {
-    margin: 40px 0 40px 0;
+  margin: 40px 0 40px 0;
 }
 
 .card {
-    margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
-/*Página Contacto*/
-.right-info {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    width: 30vw;
-    height: 130vh;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    border: 0;
-    box-sizing: border-box;
+/* Página CURSOS */
+
+.courses-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30 px;
 }
 
-.right-content {
+.courses-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 270px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-.aside1 {
-    font-weight: bolder;
-    color: white;
-}
-
-.aside2 {
-    font-size: medium;
-    color: white;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-.aside3 {
-    font-size: medium;
-    color: white;
-    padding-top: 20px;
-}
-
-#element-style {
-    height: 100%;
-    position: relative;
-    touch-action: none;
-    opacity: 1;
-    top: 0px;
-    transition: all 600ms;
-}
-
-.fullpage {
-    display: block;
-    right: 0;
-    width: 70vw;
-    vertical-align: baseline;
-    border: 0;
-    box-sizing: border-box;
-}
-
-.fp-section.fp-table, .fp-slide.fp-table {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.fp-section {
-    position: relative;
-    box-sizing: border-box;
-}
-
-.inside-section {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: calc(100% - 200px);
     justify-content: center;
     align-items: center;
 }
 
+.card {
+  padding: 20px;
+  width: 300px;
+  min-height: 430px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00852f;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 230px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #636363;
+}
+
+.by-name {
+  font-weight: 700;
+}
+
+/*Página CONTACTO*/
+
+.right-info {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 30vw;
+  height: 130vh;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 270px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.aside1 {
+  font-weight: bolder;
+  color: white;
+}
+
+.aside2 {
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.aside3 {
+  font-size: medium;
+  color: white;
+  padding-top: 20px;
+}
+
+#element-style {
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  opacity: 1;
+  top: 0px;
+  transition: all 600ms;
+}
+
+.fullpage {
+  display: block;
+  right: 0;
+  width: 70vw;
+  vertical-align: baseline;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.fp-section.fp-table,
+.fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.fp-section {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.inside-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 200px);
+  justify-content: center;
+  align-items: center;
+}
+
 .inside-split-text {
-    position: relative;
-    z-index: 10;
-    left: 0;
-    visibility: visible;
-    width: 100%;
-    max-width: 800px;
-    padding: 0 100px;
-    text-align: left;
+  position: relative;
+  z-index: 10;
+  left: 0;
+  visibility: visible;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 100px;
+  text-align: left;
 }
 
 h1 {
-    font-size: 7.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #00852f;
+  font-size: 7.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #00852f;
 }
 
 p.subtitle-home {
-    font-size: 1.8rem;
-    font-weight: 350;
-    line-height: 1.8;
-    margin: 0;
-    color: black;
+  font-size: 1.8rem;
+  font-weight: 350;
+  line-height: 1.8;
+  margin: 0;
+  color: black;
 }
 
 element-style {
-    height: 552px; 
+  height: 552px;
 }
 
 fp-section {
-    position: relative;
-    box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .section-name {
-    position: absolute;
-    z-index: 10;
-    top: 38px;
-    left: 0;
-    overflow: hidden;
-    padding-left: 100px;
-    color: grey;
+  position: absolute;
+  z-index: 10;
+  top: 38px;
+  left: 0;
+  overflow: hidden;
+  padding-left: 100px;
+  color: grey;
 }
 
 .fp-slide {
-    height: 100%;
-    display: block;
+  height: 100%;
+  display: block;
 }

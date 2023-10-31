@@ -137,12 +137,16 @@
 /* Presentación */
 .us-section {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 30 px;
 }
 
-.us-description {
+/*.us-description {
   margin: 40px 0 40px 0;
-}
+}*/
 
 .card {
   margin: 0 0 20px 0;

@@ -121,6 +121,11 @@
   margin: 40px 0 40px 0;
 }
 
+.btn-secondary {
+  background-color: #45b76ddd;
+  text-decoration: none;
+}
+
 /* Página NOSOTROS */
 /* Texto Presentación */
 .name-text {
@@ -366,5 +371,7 @@ body {
 	text-overflow: ellipsis;
 }
 
-/*Página CONTACTO*/
+/*Página The Team*/
+
+
 

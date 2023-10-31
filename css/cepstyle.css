@@ -214,7 +214,15 @@
   font-weight: 700;
 }
 
-/* Página Talleres */
+/* Página Contacto */
+
+h1 {
+  font-size: 7.5rem;
+  font-weight: 500;
+  font-size: bold;
+  text-transform: uppercase;
+  color: #00852f;
+}
 
 body {
 	font-family: 'Open Sans', arial, sans-serif;
@@ -225,7 +233,7 @@ body {
 	margin: 50px 0;
 }
 
-/* Actual Code: */
+/* Codigo */
 .projcard-container,
 .projcard-container * {
 	box-sizing: border-box;
@@ -334,10 +342,7 @@ body {
 	font-family: 'Voces', 'Open Sans', arial, sans-serif;
 	font-size: 24px;
 }
-.projcard-subtitle {
-	font-family: 'Voces', 'Open Sans', arial, sans-serif;
-	color: #888;
-}
+
 .projcard-bar {
 	left: -2px;
 	width: 50px;
@@ -347,30 +352,11 @@ body {
 	background-color: #424242;
 	transition: width 0.2s ease;
 }
-.projcard-blue .projcard-bar { background-color: #0088FF; }
-.projcard-blue::before { background-image: linear-gradient(-70deg, #0088FF, transparent 50%); }
-.projcard-blue:nth-child(2n)::before { background-image: linear-gradient(-250deg, #0088FF, transparent 50%); }
-.projcard-red .projcard-bar { background-color: #D62F1F; }
-.projcard-red::before { background-image: linear-gradient(-70deg, #D62F1F, transparent 50%); }
-.projcard-red:nth-child(2n)::before { background-image: linear-gradient(-250deg, #D62F1F, transparent 50%); }
+
 .projcard-green .projcard-bar { background-color: #40BD00; }
 .projcard-green::before { background-image: linear-gradient(-70deg, #40BD00, transparent 50%); }
 .projcard-green:nth-child(2n)::before { background-image: linear-gradient(-250deg, #40BD00, transparent 50%); }
-.projcard-yellow .projcard-bar { background-color: #F5AF41; }
-.projcard-yellow::before { background-image: linear-gradient(-70deg, #F5AF41, transparent 50%); }
-.projcard-yellow:nth-child(2n)::before { background-image: linear-gradient(-250deg, #F5AF41, transparent 50%); }
-.projcard-orange .projcard-bar { background-color: #FF5722; }
-.projcard-orange::before { background-image: linear-gradient(-70deg, #FF5722, transparent 50%); }
-.projcard-orange:nth-child(2n)::before { background-image: linear-gradient(-250deg, #FF5722, transparent 50%); }
-.projcard-brown .projcard-bar { background-color: #C49863; }
-.projcard-brown::before { background-image: linear-gradient(-70deg, #C49863, transparent 50%); }
-.projcard-brown:nth-child(2n)::before { background-image: linear-gradient(-250deg, #C49863, transparent 50%); }
-.projcard-grey .projcard-bar { background-color: #424242; }
-.projcard-grey::before { background-image: linear-gradient(-70deg, #424242, transparent 50%); }
-.projcard-grey:nth-child(2n)::before { background-image: linear-gradient(-250deg, #424242, transparent 50%); }
-.projcard-customcolor .projcard-bar { background-color: var(--projcard-color); }
-.projcard-customcolor::before { background-image: linear-gradient(-70deg, var(--projcard-color), transparent 50%); }
-.projcard-customcolor:nth-child(2n)::before { background-image: linear-gradient(-250deg, var(--projcard-color), transparent 50%); }
+
 .projcard-description {
 	z-index: 10;
 	font-size: 15px;
@@ -379,177 +365,6 @@ body {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.projcard-tagbox {
-	position: absolute;
-	bottom: 3%;
-	font-size: 14px;
-	cursor: default;
-	user-select: none;
-	pointer-events: none;
-}
-.projcard-tag {
-	display: inline-block;
-	background: #E0E0E0;
-	color: #777;
-	border-radius: 3px 0 0 3px;
-	line-height: 26px;
-	padding: 0 10px 0 23px;
-	position: relative;
-	margin-right: 20px;
-	cursor: default;
-	user-select: none;
-	transition: color 0.2s;
-}
-.projcard-tag::before {
-	content: '';
-	position: absolute;
-	background: #fff;
-	border-radius: 10px;
-	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-	height: 6px;
-	left: 10px;
-	width: 6px;
-	top: 10px;
-}
-.projcard-tag::after {
-	content: '';
-	position: absolute;
-	border-bottom: 13px solid transparent;
-	border-left: 10px solid #E0E0E0;
-	border-top: 13px solid transparent;
-	right: -10px;
-	top: 0;
-}
 
 /*Página CONTACTO*/
-
-.right-info {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  width: 30vw;
-  height: 130vh;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  border: 0;
-  box-sizing: border-box;
-}
-
-.right-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 270px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-.aside1 {
-  font-weight: bolder;
-  color: white;
-}
-
-.aside2 {
-  font-size: medium;
-  color: white;
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.aside3 {
-  font-size: medium;
-  color: white;
-  padding-top: 20px;
-}
-
-#element-style {
-  height: 100%;
-  position: relative;
-  touch-action: none;
-  opacity: 1;
-  top: 0px;
-  transition: all 600ms;
-}
-
-.fullpage {
-  display: block;
-  right: 0;
-  width: 70vw;
-  vertical-align: baseline;
-  border: 0;
-  box-sizing: border-box;
-}
-
-.fp-section.fp-table,
-.fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-}
-
-.fp-section {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.inside-section {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: calc(100% - 200px);
-  justify-content: center;
-  align-items: center;
-}
-
-.inside-split-text {
-  position: relative;
-  z-index: 10;
-  left: 0;
-  visibility: visible;
-  width: 100%;
-  max-width: 800px;
-  padding: 0 100px;
-  text-align: left;
-}
-
-h1 {
-  font-size: 7.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #00852f;
-}
-
-p.subtitle-home {
-  font-size: 1.8rem;
-  font-weight: 350;
-  line-height: 1.8;
-  margin: 0;
-  color: black;
-}
-
-element-style {
-  height: 552px;
-}
-
-fp-section {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.section-name {
-  position: absolute;
-  z-index: 10;
-  top: 38px;
-  left: 0;
-  overflow: hidden;
-  padding-left: 100px;
-  color: grey;
-}
-
-.fp-slide {
-  height: 100%;
-  display: block;
-}
 

@@ -137,21 +137,11 @@
 /* Presentación */
 .us-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 30 px;
+  justify-content: center;
 }
 
 .card {
   margin: 0 0 20px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 30 px;
 }
 
 /* Página CURSOS */

@@ -1,0 +1,70 @@
+  /* Página CURSOS */
+
+  .courses-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: $senary-color;
+    text-align: center;
+}
+
+.courses-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 30 px;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  width: 300px;
+  min-height: 430px;
+  border-radius: 20px;
+  background: $quaternary-color;
+  box-shadow: 5px 5px 6px $quinary-color, -5px -5px 6px $nonary-color;
+  transition: 0.4s;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: $primary-color;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 230px;
+  background-color: $quinary-color;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px $quaternary-color, inset -8px -8px 10px #cfcfcf;
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: $septenary-color;
+  font-size: 15px;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: $tertiary-color;
+}
+
+.by-name {
+  font-weight: 700;
+}

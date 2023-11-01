@@ -1,4 +1,4 @@
-/* MAIN */
+@charset "UTF-8";
 /* Header */
 .navbar-brand {
   display: flex;
@@ -18,13 +18,12 @@
 }
 
 /* Introducción de la web */
-
 .welcome-banner {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: darkgreen;
+  color: #00852f;
   display: block;
   margin: 0 auto;
   padding: 25px;
@@ -36,12 +35,6 @@
 }
 
 /* Info del Instituto */
-
-.inicio-info {
-  display: flex;
-  justify-content: center;
-}
-
 .inicio-info {
   display: flex;
   flex-direction: row;
@@ -74,7 +67,6 @@
 }
 
 /* Seccion Cursos */
-
 .courses-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -108,7 +100,6 @@
 }
 
 /*El Equipo*/
-
 .team-container {
   margin-top: 40px;
 }
@@ -121,7 +112,7 @@
 }
 
 .btn-secondary {
-  background-color: #45b76ddd;
+  background-color: rgba(69, 183, 109, 0.8666666667);
   text-decoration: none;
 }
 
@@ -135,12 +126,11 @@
 }
 
 /* Presentación */
-
 .pic-aside {
   float: right;
   z-index: 5;
   right: 0;
-  width: 50vw;  
+  width: 50vw;
   height: 125vh;
   background-image: url(../img/index/fotos/aside-cep.webp);
   background-size: cover;
@@ -154,7 +144,7 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: black;
+  color: #000000;
   text-shadow: #999797 1px 1px 1px;
   margin-top: 90px;
   box-sizing: border-box;
@@ -163,40 +153,40 @@
 .us-paragraph {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: #000000;
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
   margin-top: 250px;
 }
+
 .card {
   margin: 0 0 20px 0;
 }
 
 /* Página CURSOS */
-
 .courses-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
 }
 
 .courses-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 30 px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 30 px;
 }
 
 .courses-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -204,8 +194,8 @@
   width: 300px;
   min-height: 430px;
   border-radius: 20px;
-  background: #e8e8e8;
-  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+  background: #fff;
+  box-shadow: 5px 5px 6px #ddd, -5px -5px 6px #ffffff;
   transition: 0.4s;
 }
 
@@ -222,14 +212,14 @@
 
 .card-image {
   min-height: 230px;
-  background-color: #c9c9c9;
+  background-color: #ddd;
   border-radius: 15px;
-  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+  box-shadow: inset 8px 8px 10px #fff, inset -8px -8px 10px #cfcfcf;
 }
 
 .card-body {
   margin: 13px 0 0 10px;
-  color: rgb(31, 31, 31);
+  color: #424242;
   font-size: 15px;
 }
 
@@ -237,7 +227,7 @@
   float: right;
   margin: 28px 0 0 18px;
   font-size: 13px;
-  color: #636363;
+  color: #333;
 }
 
 .by-name {
@@ -245,7 +235,6 @@
 }
 
 /* Página Contacto */
-
 h1 {
   font-size: 7.5rem;
   font-weight: 500;
@@ -255,150 +244,177 @@ h1 {
 }
 
 body {
-	font-family: 'Open Sans', arial, sans-serif;
-	color: #333;
-	font-size: 14px;
+  font-family: "Open Sans", arial, sans-serif;
+  color: #333;
+  font-size: 14px;
 }
+
 .projcard-container {
-	margin: 50px 0;
+  margin: 50px 0;
 }
 
 /* Codigo */
 .projcard-container,
 .projcard-container * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .projcard-container {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
+
 .projcard {
-	position: relative;
-	width: 100%;
-	height: 300px;
-	margin-bottom: 40px;
-	border-radius: 10px;
-	background-color: #fff;
-	border: 2px solid #ddd;
-	font-size: 18px;
-	overflow: hidden;
-	cursor: pointer;
-	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
-	transition: box-shadow 0.2s ease, transform 0.2s ease;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 21px -12px #000000;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
+
 .projcard:hover {
-	box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
-	transform: translate(0px, -3px);
+  box-shadow: 0 34px 32px -33px #000000;
+  transform: translate(0px, -3px);
 }
+
 .projcard::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(-70deg, #424242, transparent 50%);
-	opacity: 0.07;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-70deg, #424242, transparent 50%);
+  opacity: 0.07;
 }
+
 .projcard:nth-child(2n)::before {
-	background-image: linear-gradient(-250deg, #424242, transparent 50%);
+  background-image: linear-gradient(-250deg, #424242, transparent 50%);
 }
+
 .projcard-innerbox {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
+
 .projcard-img {
-	position: absolute;
-	height: 300px;
-	width: 400px;
-	top: 0;
-	left: 0;
-	transition: transform 0.2s ease;
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s ease;
 }
+
 .projcard:nth-child(2n) .projcard-img {
-	left: initial;
-	right: 0;
+  left: initial;
+  right: 0;
 }
+
 .projcard:hover .projcard-img {
-	transform: scale(1.05) rotate(1deg);
+  transform: scale(1.05) rotate(1deg);
 }
+
 .projcard:hover .projcard-bar {
-	width: 70px;
+  width: 70px;
 }
+
 .projcard-textbox {
-	position: absolute;
-	top: 7%;
-	bottom: 7%;
-	left: 430px;
-	width: calc(100% - 470px);
-	font-size: 17px;
+  position: absolute;
+  top: 7%;
+  bottom: 7%;
+  left: 430px;
+  width: calc(100% - 470px);
+  font-size: 17px;
 }
+
 .projcard:nth-child(2n) .projcard-textbox {
-	left: initial;
-	right: 430px;
+  left: initial;
+  right: 430px;
 }
+
 .projcard-textbox::before,
 .projcard-textbox::after {
-	content: "";
-	position: absolute;
-	display: block;
-	background: #ff0000bb;
-	background: #fff;
-	top: -20%;
-	left: -55px;
-	height: 140%;
-	width: 60px;
-	transform: rotate(8deg);
+  content: "";
+  position: absolute;
+  display: block;
+  background: #333;
+  background: #fff;
+  top: -20%;
+  left: -55px;
+  height: 140%;
+  width: 60px;
+  transform: rotate(8deg);
 }
+
 .projcard:nth-child(2n) .projcard-textbox::before {
-	display: none;
+  display: none;
 }
+
 .projcard-textbox::after {
-	display: none;
-	left: initial;
-	right: -55px;
+  display: none;
+  left: initial;
+  right: -55px;
 }
+
 .projcard:nth-child(2n) .projcard-textbox::after {
-	display: block;
+  display: block;
 }
+
 .projcard-textbox * {
-	position: relative;
+  position: relative;
 }
+
 .projcard-title {
-	font-family: 'Voces', 'Open Sans', arial, sans-serif;
-	font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
 }
 
 .projcard-bar {
-	left: -2px;
-	width: 50px;
-	height: 5px;
-	margin: 10px 0;
-	border-radius: 5px;
-	background-color: #424242;
-	transition: width 0.2s ease;
+  left: -2px;
+  width: 50px;
+  height: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  transition: width 0.2s ease;
 }
 
-.projcard-green .projcard-bar { background-color: #40BD00; }
-.projcard-green::before { background-image: linear-gradient(-70deg, #40BD00, transparent 50%); }
-.projcard-green:nth-child(2n)::before { background-image: linear-gradient(-250deg, #40BD00, transparent 50%); }
+.projcard-green .projcard-bar {
+  background-color: #40BD00;
+}
+
+.projcard-green::before {
+  background-image: linear-gradient(-70deg, #40BD00, transparent 50%);
+}
+
+.projcard-green:nth-child(2n)::before {
+  background-image: linear-gradient(-250deg, #40BD00, transparent 50%);
+}
 
 .projcard-description {
-	z-index: 10;
-	font-size: 15px;
-	color: #424242;
-	height: 125px;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  z-index: 10;
+  font-size: 15px;
+  color: #424242;
+  height: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*Página The Team*/
-
 .team-slider {
   padding-bottom: 40px;
 }
 
+/*# sourceMappingURL=cepstyle.css.map */

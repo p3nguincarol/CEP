@@ -1,16 +1,37 @@
 @charset "UTF-8";
-.h1 {
+.name-text {
   color: #00852f;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 27px;
   font-weight: bold;
+  text-align: center;
 }
 
-.h2 {
+.courses-text {
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
+.form-text {
+  color: #424242;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+}
+
+.courses-text, .form-format .form-group {
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url();
+}
 /* Header */
 .container-fluid {
   display: flex;
@@ -18,9 +39,7 @@
   justify-content: center;
   align-items: space-between;
   flex-wrap: none;
-  /*display: flex;*/
   background-image: #ddd;
-  /*justify-content: space-between; */
   padding: auto;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,8 +47,13 @@
 
 .navbar-brand {
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: none;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
   margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -158,141 +182,6 @@
   text-decoration: none;
 }
 
-/* Página NOSOTROS */
-/* Texto Presentación */
-.name-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 30px;
-}
-
-/* Presentación */
-.pic-aside {
-  float: right;
-  z-index: 5;
-  right: 0;
-  width: 50vw;
-  height: 125vh;
-  background-image: url(../img/index/fotos/aside-cep.webp);
-  background-size: cover;
-  border: solid 1px; /*agregar color*/
-  box-shadow: 2px 2px 5px; /*agregar color*/
-  box-sizing: border-box;
-  margin-right: 20px;
-}
-
-.us-asidetitle {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #000000;
-  text-shadow: #999797 1px 1px 1px;
-  margin-top: 90px;
-  box-sizing: border-box;
-}
-
-.us-paragraph {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-  margin-top: 250px;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.card {
-  margin: 0 0 20px 0;
-}
-
-/* Página CURSOS */
-.courses-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  color: #000000;
-  text-align: center;
-}
-
-.courses-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 30 px;
-}
-
-.courses-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  padding: 20px;
-  width: 300px;
-  min-height: 430px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 5px 5px 6px #ddd, -5px -5px 6px #ffffff;
-  transition: 0.4s;
-}
-
-.card:hover {
-  translate: 0 -10px;
-}
-
-.card-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #00852f;
-  margin: 15px 0 0 10px;
-}
-
-.card-image {
-  min-height: 230px;
-  background-color: #ddd;
-  border-radius: 15px;
-  box-shadow: inset 8px 8px 10px #fff, inset -8px -8px 10px #cfcfcf;
-}
-
-.card-body {
-  margin: 13px 0 0 10px;
-  color: #424242;
-  font-size: 15px;
-}
-
-.footer {
-  float: right;
-  margin: 28px 0 0 18px;
-  font-size: 13px;
-  color: #333;
-}
-
-.by-name {
-  font-weight: 700;
-}
-
-/* Página Contacto */
-h1 {
-  font-size: 7.5rem;
-  font-weight: 500;
-  font-size: bold;
-  text-transform: uppercase;
-  color: #00852f;
-}
-
 body {
   font-family: "Open Sans", arial, sans-serif;
   color: #333;
@@ -301,15 +190,7 @@ body {
 
 .projcard-container {
   margin: 50px 0;
-}
-
-/* Codigo */
-.projcard-container,
-.projcard-container * {
   box-sizing: border-box;
-}
-
-.projcard-container {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
@@ -326,12 +207,12 @@ body {
   font-size: 18px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 21px -12px #000000;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .projcard:hover {
-  box-shadow: 0 34px 32px -33px #000000;
+  box-shadow: 0 34px 32px -33px rgba(0, 0, 0, 0.18);
   transform: translate(0px, -3px);
 }
 
@@ -357,8 +238,7 @@ body {
   bottom: 0;
   left: 0;
 }
-
-.projcard-img {
+.projcard-innerbox .projcard-img {
   position: absolute;
   height: 300px;
   width: 400px;
@@ -399,7 +279,7 @@ body {
   content: "";
   position: absolute;
   display: block;
-  background: #333;
+  background: rgba(69, 183, 109, 0.8666666667);
   background: #fff;
   top: -20%;
   left: -55px;
@@ -427,7 +307,7 @@ body {
 }
 
 .projcard-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Voces", "Open Sans", arial, sans-serif;
   font-size: 24px;
 }
 
@@ -437,8 +317,7 @@ body {
   height: 5px;
   margin: 10px 0;
   border-radius: 5px;
-  background-color: #424242;
-  transition: width 0.2s ease;
+  background-color: #424242, transition width 0.2s ease;
 }
 
 .projcard-green .projcard-bar {
@@ -462,7 +341,152 @@ body {
   text-overflow: ellipsis;
 }
 
-/*Página The Team*/
+.form-format {
+  background-color: rgb(127, 255, 127);
+  width: auto;
+  height: 725px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: rgb(27, 15, 15);
+  max-width: 100%;
+}
+.form-format .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: none;
+  box-sizing: border-box;
+}
+.form-format .form-group {
+  background-color: rgb(47, 103, 47);
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #424242;
+}
+.form-format .form-group .btn-color {
+  background-color: #40BD00;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.courses-text {
+  font-size: 17px;
+  text-align: center;
+}
+
+.courses-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 30 px;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  width: 300px;
+  min-height: 430px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00852f;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 230px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+}
+
+/*.footer {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #636363;
+}
+
+.by-name {
+    font-weight: 700;
+}*/
+.name-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.pic-aside {
+  float: right;
+  z-index: 5;
+  right: 0;
+  width: 50vw;
+  height: 125vh;
+  background-image: url(../img/index/fotos/aside-cep.webp);
+  background-size: cover;
+  border: solid 1px;
+  box-shadow: 2px 2px 5px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.us-asidetitle {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  text-shadow: #999797 1px 1px 1px;
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+
+.cards-aside {
+  float: left;
+  z-index: 1;
+  left: 0;
+  width: 50vw;
+  height: 110vh;
+  border: solid 1px;
+  box-shadow: 2px 2px 5px;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+/*.card {
+    margin: 0 0 20px 0;
+}*/
 .team-slider {
   padding-bottom: 40px;
 }

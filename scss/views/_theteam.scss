@@ -1,4 +1,10 @@
-  /*Página The Team*/
+.name-text {
+    @extend %h1;
+}
 
-  .team-slider {
-    padding-bottom: 40px;}
+.courses-text {
+    @extend %p
+}
+.team-slider {
+    padding-bottom: 40px;
+}

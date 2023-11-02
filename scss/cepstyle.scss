@@ -2,10 +2,12 @@
 @import 'utilities/extend';
 @import 'utilities/mixin';
 @import 'utilities/maps';
+@import 'base/generales';
+@import 'layout/footer';
 @import 'layout/header';
 @import 'layout/index';
-@import 'views/nosotros';
-@import 'views/cursos';
 @import 'views/contacto';
+@import 'views/cursos';
+@import 'views/nosotros';
 @import 'views/theteam';
-@import 'queries'
+@import 'queries';

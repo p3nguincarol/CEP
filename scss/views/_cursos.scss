@@ -1,70 +1,69 @@
-  /* Página CURSOS */
-
-  .courses-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.name-text {
+    @extend %h1;
+}
+.courses-text {
+    @extend %h2;    
     font-size: 17px;
-    font-weight: bold;
-    color: $senary-color;
     text-align: center;
 }
 
 .courses-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 30 px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30 px;
 }
 
 .courses-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-  padding: 20px;
-  width: 300px;
-  min-height: 430px;
-  border-radius: 20px;
-  background: $quaternary-color;
-  box-shadow: 5px 5px 6px $quinary-color, -5px -5px 6px $nonary-color;
-  transition: 0.4s;
+    padding: 20px;
+    width: 300px;
+    min-height: 430px;
+    border-radius: 20px;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 6px #dadada, -5px -5px 6px #f6f6f6;
+    transition: 0.4s;
 }
 
 .card:hover {
-  translate: 0 -10px;
+    translate: 0 -10px;
 }
 
 .card-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: $primary-color;
-  margin: 15px 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #00852f;
+    margin: 15px 0 0 10px;
 }
 
 .card-image {
-  min-height: 230px;
-  background-color: $quinary-color;
-  border-radius: 15px;
-  box-shadow: inset 8px 8px 10px $quaternary-color, inset -8px -8px 10px #cfcfcf;
+    min-height: 230px;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 10px #c3c3c3, inset -8px -8px 10px #cfcfcf;
 }
 
 .card-body {
-  margin: 13px 0 0 10px;
-  color: $septenary-color;
-  font-size: 15px;
+    margin: 13px 0 0 10px;
+    color: rgb(31, 31, 31);
+    font-size: 15px;
 }
 
-.footer {
-  float: right;
-  margin: 28px 0 0 18px;
-  font-size: 13px;
-  color: $tertiary-color;
+/*.footer {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #636363;
 }
 
 .by-name {
-  font-weight: 700;
-}
+    font-weight: 700;
+}*/

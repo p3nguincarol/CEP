@@ -1,52 +1,48 @@
-/* Página NOSOTROS */
-  /* Texto Presentación */
-
-  .name-text {
+.name-text {
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
     font-size: 30px;
-  }
+    @extend %h1;
+}
 
-  /* Presentación */
-
-  .pic-aside {
+.pic-aside {
     float: right;
     z-index: 5;
     right: 0;
-    width: 50vw;  
+    width: 50vw;
     height: 125vh;
     background-image: url(../img/index/fotos/aside-cep.webp);
     background-size: cover;
-    border: solid 1px; /*agregar color*/
-    box-shadow: 2px 2px 5px; /*agregar color*/
+    border: solid 1px;
+    box-shadow: 2px 2px 5px;
     box-sizing: border-box;
     margin-right: 20px;
-  }
+}
 
-  .us-asidetitle {
+.us-asidetitle {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: $senary-color;
+    color: black;
     text-shadow: #999797 1px 1px 1px;
     margin-top: 90px;
     box-sizing: border-box;
-  }
+}
 
-  .us-paragraph {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $senary-color;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 250px;
-  }
+.cards-aside {
+    float: left;
+    z-index: 1;
+    left: 0;
+    width: 50vw;
+    height: 110vh;
+    border: solid 1px;
+    box-shadow: 2px 2px 5px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
 
-  .row {
-    @include flex (flex, column, space-between, flex-start, wrap);
-  }
-  .card {
+
+/*.card {
     margin: 0 0 20px 0;
-  }
+}*/

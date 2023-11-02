@@ -1,0 +1,118 @@
+/*Media Queries Header */
+@media (min-width: 400px) and (max-width: 480px) {
+    .navbar-expand {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        .container-fluid {
+            display: flex;
+            background-image: $quinary-color;
+            justify-content: space-between; 
+            padding: auto;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            .header-logo {
+                width: 25px;
+                height: 25px;
+                margin-right: 1px;
+            }
+            .navbar-brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 7px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 11px;
+            }
+        }
+    }    
+    .cep-presentation {
+        .cep-video {
+            width: 300px;
+        }
+    }
+    .inicio-info {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        object-fit: cover;
+        .inicio-img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            img {
+                width: 48%;    
+            }
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;    
+            }
+        }
+    }
+    .courses-section {
+        display: flexbox;
+        flex-direction: column;
+        courses-1 {
+            .figure1 {
+                justify-items: center;
+                align-items: start;
+                .figure-img {
+                    width: 20px;
+                    height: 50px;
+                }
+            }
+            .figure2 {
+                justify-items: center;
+                align-items: start;
+                .figure-img {
+                    width: 12px;
+                    height: 25px;
+                }
+            }
+        }
+        courses-2 {
+            .figure3 {
+                justify-items: center;
+                align-items: start;
+                .figure-img {
+                    width: 10px;
+                    height: 50px;
+                }
+            }
+            .figure4 {
+                justify-items: center;
+                align-items: start;
+                .figure-img {
+                    width: 10px;
+                    height: 50px;
+                }
+            }  
+        }
+    }
+    .team-container {
+        .gap-2{
+            .btn-primary{
+                width: 45%;
+            }
+            .team-slider {
+                .carousel-fade {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .contacto {
+        width: 50%;
+        .contact-map {
+            width: auto;
+            height: auto;
+        }
+    }
+}

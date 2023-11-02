@@ -28,7 +28,9 @@
                 <div class="header-logo">
                     <a href="./index.html"><img src="./img/index/logos/Isotipo25.png" alt="logo-instituto"></a>
                 </div>
-                <a class="navbar-brand" href="index.html">CEP School of English</a>
+                <div class="navbar-brand">
+                    <h2>CEP School of English</h2>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -64,28 +66,33 @@
     </header>
     <main>
         <!--introduccion de la web-->
-        <h1 class="welcome-banner">Hello! Do you speak English?</h1>
-        <video autoplay muted loop class="cep-video">
-            <source src="./vid/CEP Video Compressed.mp4" type="video/mp4" alt="video-institucional">
-        </video>
+        <section class="welcome-class">
+            <h1 class="welcome-banner">Hello! Do you speak English?</h1>
+        </section>
+        <section class="cep-presentation">
+            <video autoplay muted loop class="cep-video">
+                <source src="./vid/CEP Video Compressed.mp4" type="video/mp4" alt="video-institucional">
+            </video>
+        </section>
         <!--Info del instituto-->
-        <section class="inicio-info">
+        <div class="inicio-info">
             <div class="inicio-img">
-                <img class="info-img" src="img/index/botones/boton1-02.webp" alt="info-institucional-1">
-                <h4 class="infobutton">Más de 25 años de trayectoria</h4>
+                <img src="./img/index/botones/historia-10.webp" alt="info-institucional-1">
+                <h4 class="infobutton">Más de 25 años de <br>trayectoria</h4>
             </div>
             <div class="inicio-img">
-                <img class="info-img" src="img/index/botones/boton2-02.webp" alt="info-institucional-2">
-                <h4 class="infobutton">Pioneros en la educación de inglés</h4>
+                <img src="./img/index/botones/pioneros-10.webp">
+                <h4 class="infobutton">Pioneros en la <br>educación de inglés</h4>
             </div>
             <div class="inicio-img">
-                <img class="info-img" src="img/index/botones/boton3-02.webp" alt="info-institucional-3">
-                <h4 class="infobutton">Ubicados en pleno centro de la ciudad</h4>
+                <img src="./img/index/botones/ubicacion-10.webp" alt="info-institucional-3">
+                <h4 class="infobutton">Ubicados en pleno <br> centro de la ciudad</h4>
             </div>
             <div class="inicio-img">
-                <img class="info-img" src="img/index/botones/boton4-02.webp" alt="info-institucional-4">
-                <h4 class="infobutton">Cursos de exámenes de Cambridge</h4>
+                <img src="./img/index/botones/cambridge-10.webp" alt="info-institucional-4">
+                <h4 class="infobutton">Cursos de exámenes <br>de Cambridge</h4>
             </div>
+        </div>
         </section>
         <!--Seccion Cursos-->
         <!--boton cursos-->
@@ -95,26 +102,26 @@
             </div>
         </div>
         <!--Presentación Cursos-->
-        <section>
+        <section class="courses-section">
             <div class="courses-1">
-                <figure class="figure">
+                <figure class="figure1">
                     <a href="pages/kids.html"><img src="img/index/fotos/kids-card-new_Mesa de trabajo 9.webp"
                             class="figure-img img-fluid rounded" alt="kids"></a>
                     <figcaption class="figure-caption text-start">Cursos Para Niños</figcaption>
                 </figure>
-                <figure class="figure">
+                <figure class="figure2">
                     <a href="pages/teens.html"><img src="img/index/fotos/teens-card-new_Mesa de trabajo 9.webp"
                             class="figure-img img-fluid rounded" alt="teens"></a>
                     <figcaption class="figure-caption text-start">Cursos Para Adolescentes</figcaption>
                 </figure>
             </div>
             <div class="courses-2">
-                <figure class="figure">
+                <figure class="figure3">
                     <a href="pages/adults.html"><img src="img/index/fotos/adults-card-new.webp"
                             class="figure-img img-fluid rounded" alt="adults"></a>
                     <figcaption class="figure-caption text-start">Cursos Para Adultos</figcaption>
                 </figure>
-                <figure class="figure">
+                <figure class="figure4">
                     <a href="pages/talleres.html"><img src="img/index/fotos/talleres-cards-new.webp"
                             class="figure-img img-fluid rounded" alt="workshops"></a>
                     <figcaption class="figure-caption text-start">Talleres</figcaption>
@@ -125,7 +132,7 @@
         <section class="team-container">
             <div class="d-grid gap-2 col-6 mx-auto">
                 <button type="button" class="btn btn-primary">El Dream Team</button>
-                <section>
+                <section class="team-slider">
                     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -160,15 +167,10 @@
                     <!--Formulario Busqueda-->
                     <button type="home-button" class="btn btn-secondary btn-lg"><a
                             href="./pages/contacto.html">Contacto</a></button>
-                    <!--form action="">
-                    <label for="">Buscar</label>
-                    <input type="text">
-                    <button>&#128269</button>
-                </form-->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.2129207212668!2d-67.70106931269305!3d-53.78890891791342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b165dce4c2e4f%3A0xd7801857c26bd94e!2sCep%20School%20Of%20English%20SRL!5e0!3m2!1ses-419!2sar!4v1693866806614!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="contact-map"></iframe>
                 </section>
     </main>
     <!-- Footer -->

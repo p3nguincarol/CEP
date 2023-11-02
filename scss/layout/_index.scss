@@ -1,6 +1,12 @@
  /* Introducción de la web */;
 
- .welcome-banner {
+  .welcome-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .welcome-banner {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
@@ -24,17 +30,9 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 280px 0 280px;
-  }
-
-  .inicio-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 290px;
-    margin: 20px;
+    margin-top: 50 px;
+    margin-bottom: 30 px;
+    padding: 50px 220px 50px 220px;
   }
 
   .info-img {
@@ -43,7 +41,7 @@
 
   .infobutton {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     color: $primary-color;
     text-align: center;
@@ -57,7 +55,15 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding: 100px;
+    padding: 70px;
+  }
+
+  .figure1 {
+    padding-right: 15px;
+  }
+
+  .figure2 {
+    padding-left: 15px;
   }
 
   .courses-2 {
@@ -67,6 +73,14 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 70px;
+  }
+
+  .figure3 {
+    padding-right: 15px;
+  }
+
+  .figure4 {
+    padding-right: 15px;
   }
 
   .text-start {

@@ -1,8 +1,29 @@
 @charset "UTF-8";
+.h1 {
+  color: #00852f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 /* Header */
+.container-fluid {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: space-between;
+  flex-wrap: none;
+  /*display: flex;*/
+  background-image: #ddd;
+  /*justify-content: space-between; */
+  padding: auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .navbar-brand {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -18,6 +39,13 @@
 }
 
 /* Introducción de la web */
+.welcome-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .welcome-banner {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -41,17 +69,9 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0 280px 0 280px;
-}
-
-.inicio-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 290px;
-  margin: 20px;
+  margin-top: 50 px;
+  margin-bottom: 30 px;
+  padding: 50px 220px 50px 220px;
 }
 
 .info-img {
@@ -60,7 +80,7 @@
 
 .infobutton {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   color: #00852f;
   text-align: center;
@@ -73,7 +93,15 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding: 100px;
+  padding: 70px;
+}
+
+.figure1 {
+  padding-right: 15px;
+}
+
+.figure2 {
+  padding-left: 15px;
 }
 
 .courses-2 {
@@ -83,6 +111,14 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 70px;
+}
+
+.figure3 {
+  padding-right: 15px;
+}
+
+.figure4 {
+  padding-right: 15px;
 }
 
 .text-start {
@@ -158,6 +194,14 @@
   font-style: italic;
   font-size: 20px;
   margin-top: 250px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -415,6 +459,113 @@ body {
 /*Página The Team*/
 .team-slider {
   padding-bottom: 40px;
+}
+
+/*Media Queries Header */
+@media (min-width: 400px) and (max-width: 480px) {
+  .navbar-expand {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .navbar-expand .container-fluid {
+    display: flex;
+    background-image: #ddd;
+    justify-content: space-between;
+    padding: auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navbar-expand .container-fluid .header-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 1px;
+  }
+  .navbar-expand .container-fluid .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+  }
+  .cep-presentation .cep-video {
+    width: 300px;
+  }
+  .inicio-info {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    object-fit: cover;
+  }
+  .inicio-info .inicio-img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+  .inicio-info .inicio-img img {
+    width: 48%;
+  }
+  .inicio-info .inicio-img h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  .courses-section {
+    display: flexbox;
+    flex-direction: column;
+  }
+  .courses-section courses-1 .figure1 {
+    justify-items: center;
+    align-items: start;
+  }
+  .courses-section courses-1 .figure1 .figure-img {
+    width: 20px;
+    height: 50px;
+  }
+  .courses-section courses-1 .figure2 {
+    justify-items: center;
+    align-items: start;
+  }
+  .courses-section courses-1 .figure2 .figure-img {
+    width: 12px;
+    height: 25px;
+  }
+  .courses-section courses-2 .figure3 {
+    justify-items: center;
+    align-items: start;
+  }
+  .courses-section courses-2 .figure3 .figure-img {
+    width: 10px;
+    height: 50px;
+  }
+  .courses-section courses-2 .figure4 {
+    justify-items: center;
+    align-items: start;
+  }
+  .courses-section courses-2 .figure4 .figure-img {
+    width: 10px;
+    height: 50px;
+  }
+  .team-container .gap-2 .btn-primary {
+    width: 45%;
+  }
+  .team-container .gap-2 .team-slider .carousel-fade {
+    width: 70%;
+  }
+  .contacto {
+    width: 50%;
+  }
+  .contacto .contact-map {
+    width: auto;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=cepstyle.css.map */

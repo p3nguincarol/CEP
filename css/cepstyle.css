@@ -5,6 +5,12 @@
   font-weight: bold;
 }
 
+.h2 {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 /* Header */
 .container-fluid {
   display: flex;

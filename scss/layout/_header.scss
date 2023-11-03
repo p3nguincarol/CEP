@@ -9,14 +9,10 @@
 
 .navbar-brand {
     @include flex (flex, none, center, center, none);
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 25px;
-    margin-left: 560px;
   }
     
 .navbar-collapse {

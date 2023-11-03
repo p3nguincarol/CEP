@@ -32,6 +32,16 @@
   font-family: Arial, Helvetica, sans-serif;
   src: url();
 }
+.text-dark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.mb-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
 /* Header */
 .container-fluid {
   display: flex;
@@ -51,14 +61,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: none;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 25px;
-  margin-left: 560px;
 }
 
 .navbar-collapse {
@@ -447,32 +453,35 @@ body {
   font-size: 30px;
 }
 
-.pic-aside {
-  float: right;
-  z-index: 5;
-  right: 0;
-  width: 50vw;
-  height: 125vh;
-  background-image: url(../img/index/fotos/aside-cep.webp);
-  background-size: cover;
-  border: solid 1px;
-  box-shadow: 2px 2px 5px;
-  box-sizing: border-box;
-  margin-right: 20px;
+.quote-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
 }
 
 .us-asidetitle {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(27, 201, 27);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
-  color: black;
-  text-shadow: #999797 1px 1px 1px;
-  margin-top: 90px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: #636363 1px 1px 1px;
+  margin-top: 100px;
   box-sizing: border-box;
 }
 
+.us-section {
+  background-image: url(../img/index/fotos/bckcep-11.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card {
-  margin: 0 0 20px 0;
+  margin: 30px;
+  gap: 20px;
 }
 
 .team-slider {
@@ -535,35 +544,35 @@ body {
     display: flexbox;
     flex-direction: column;
   }
-  .courses-section courses-1 .figure1 {
+  .courses-section .courses-1 .figure1 {
     justify-items: center;
     align-items: start;
   }
-  .courses-section courses-1 .figure1 .figure-img {
+  .courses-section .courses-1 .figure1 .figure-img {
     width: 20px;
     height: 50px;
   }
-  .courses-section courses-1 .figure2 {
+  .courses-section .courses-1 .figure2 {
     justify-items: center;
     align-items: start;
   }
-  .courses-section courses-1 .figure2 .figure-img {
+  .courses-section .courses-1 .figure2 .figure-img {
     width: 12px;
     height: 25px;
   }
-  .courses-section courses-2 .figure3 {
+  .courses-section .courses-2 .figure3 {
     justify-items: center;
     align-items: start;
   }
-  .courses-section courses-2 .figure3 .figure-img {
+  .courses-section .courses-2 .figure3 .figure-img {
     width: 10px;
     height: 50px;
   }
-  .courses-section courses-2 .figure4 {
+  .courses-section .courses-2 .figure4 {
     justify-items: center;
     align-items: start;
   }
-  .courses-section courses-2 .figure4 .figure-img {
+  .courses-section .courses-2 .figure4 .figure-img {
     width: 10px;
     height: 50px;
   }
@@ -579,6 +588,13 @@ body {
   .contacto .contact-map {
     width: auto;
     height: auto;
+  }
+  /* SECCION NOSOTROS*/
+  .us-section .us-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 

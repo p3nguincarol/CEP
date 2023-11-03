@@ -55,7 +55,7 @@
     .courses-section {
         display: flexbox;
         flex-direction: column;
-        courses-1 {
+        .courses-1 {
             .figure1 {
                 justify-items: center;
                 align-items: start;
@@ -73,7 +73,7 @@
                 }
             }
         }
-        courses-2 {
+        .courses-2 {
             .figure3 {
                 justify-items: center;
                 align-items: start;
@@ -109,6 +109,15 @@
         .contact-map {
             width: auto;
             height: auto;
+        }
+    }
+    /* SECCION NOSOTROS*/
+    .us-section {
+        .us-description {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

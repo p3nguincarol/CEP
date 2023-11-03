@@ -6,30 +6,33 @@
     @extend %h1;
 }
 
-.pic-aside {
-    float: right;
-    z-index: 5;
-    right: 0;
-    width: 50vw;
-    height: 125vh;
-    background-image: url(../img/index/fotos/aside-cep.webp);
-    background-size: cover;
-    border: solid 1px;
-    box-shadow: 2px 2px 5px;
-    box-sizing: border-box;
-    margin-right: 20px;
+.quote-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
 }
 
 .us-asidetitle {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 201, 27);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    color: black;
-    text-shadow: #999797 1px 1px 1px;
-    margin-top: 90px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: #636363 1px 1px 1px;
+    margin-top: 100px;
     box-sizing: border-box;
 }
 
-.card {
-    margin: 0 0 20px 0;
+.us-section {
+    background-image: url(../img/index/fotos/bckcep-11.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    margin: 30px;
+    gap: 20px;
 }

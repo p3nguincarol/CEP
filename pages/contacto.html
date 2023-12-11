@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apartado con las preguntas más frecuentes que nos hacen al momento de inscribirse en un curso de inglés. Nuestro contacto directo y ubicación.">
+  <meta name="description"
+    content="Apartado con las preguntas más frecuentes que nos hacen al momento de inscribirse en un curso de inglés. Nuestro contacto directo y ubicación.">
   <meta name="keywords"
     content="preguntas frecuentes, dudas, consultas, ubicación, datos del instituto, inglés, rio grande, tierra del fuego, argentina, clases de ingles">
   <title>CEP School of English</title>
@@ -29,7 +30,7 @@
         </div>
         <div class="navbar-brand">
           <img src="../img/index/logos/logocep-02.webp" alt="texto-logo">
-      </div>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -123,53 +124,61 @@
         </div>
     </section>
     <!-- Formulario de Contacto -->
-    <section>
-      <div>
-        <h3 class="form-text">Si aún así querés consultarnos algo, podes llenar el siguiente formulario, <br>comunicarte
-          por
-          teléfono o acercarte al instituto en nuestros horarios de atención.</h3>
-      </div>
-      <div class="form-format">
-        <form action="enviarprueba.php" class="contact-form" name="contact-form" method="POST" data-name="Contact Form">
-          <div class="contact-row">
-            <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
+    <section class="py-5">
+      <div class="container px-5">
+        <!--Formulario-->
+        <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
+          <div class="text-center mb-5">
+            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+              <h3>Formulario de Contacto</h3>
             </div>
-            <!-- Nombre Completo -->
-            <div class="col-xs-12 col-sm-6 col-lg-6">
-              <div class="form-group">
-                <i class="fa fa-user icon-fields"></i>
-                <input type="text" id="name" class="form form-control" placeholder="Nombre*" name="nombre"
-                  data-name="Name" required="">
-              </div>
+            <h4 class="fw-bolder">¿Más consultas? Estamos para ayudarte</h4>
+            <p class="lead fw-normal text-muted mb-0">Esperamos tu contacto</p>
+          </div>
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+              <form id="contact form" data-sb-form-api-token="API_TOKEN">
+                <!--Nombre-->
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                    data-sb-validations="required" data-sb-can-submit="no">
+                  <label for="name">Nombre Completo</label>
+                  <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre
+                  </div>
+                  <!--email-->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                      data-sb-validations="required email" data-sb-can-submit="no">
+                    <label for="email">Dirección de mail</label>
+                    <div class="invalid-feedback" data-sb-feedback="email:required">se requiere un correo electrónico
+                    </div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">el correo electrónico no es válido
+                    </div>
+                    <!--Teléfono-->
+                    <div class="form-floating mb-3">
+                      <input class="form-control" id="phone" type="tel" placeholder="(1234) 567890"
+                        data-sb-validations="required" data-sb-can-submit="no">
+                      <label for="phone">Teléfono de Contacto</label>
+                      <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un número de contacto
+                      </div>
+                      <!--Message-->
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Ingrese su mensaje aquí..."
+                          style="height: 10rem;" data-sb-validations="required" data-sb-can-submit="no">
+                        </textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje
+                        </div>
+                      </div>
+                    </div>
+                    <!--BOTON ENVIAR-->
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" id="submitbutton" type="submit"> Enviar</button>
+                    </div>
+              </form>
             </div>
-            <!-- E-mail -->
-            <div class="col-xs-12 col-sm-6 col-lg-6">
-              <div class="form-group">
-                <i class="fa fa-envelope icon-fields"></i>
-                <input type="email" id="email" class="form form-control" placeholder="Email*" name="email"
-                  data-name="Email Address" required="">
-              </div>
-            </div>
-            <!-- Teléfono -->
-            <div class="col-xs-12 col-sm-6 col-lg-6">
-              <div class="form-group">
-                <i class="fa fa-phone icon-fields"></i>
-                <input type="tel" id="phone" class="form form-control" placeholder="Teléfono" name="telefono"
-                  data-name="Phone" required="">
-              </div>
-            </div>
-            <!-- Mensaje -->
-            <div class="col-xs-12 col-sm-6 col-lg-6">
-              <div class="form-group">
-                <i class="fa fa-pencil icon-fields"></i>
-                <textarea id="text-area" class="form form-control"
-                  placeholder="Tu Mensaje*" name="mensaje" data-name="Text Area"
-                  required=""></textarea>
-              </div>
-            </div>
-            <!-- Envío del Formulario -->
-            <button type="submit" id="valid-form" class="btn btn-color">Enviar mi Mensaje</button>
-        </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
